@@ -1,0 +1,787 @@
+@media (max-width:1536px) {
+    .main_logo_img{
+        width: 80%;
+    }
+    .main{
+        height: calc(100vh - 139px);
+    }
+    .banner{
+        padding: 0.88rem 0;
+    }
+    .header__list{
+        padding: 1.25rem 0;
+    }
+    
+    .identation{
+        margin-top: 7rem;
+    }
+    .max-w{
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 64px;
+    }
+    .container_icons{
+        padding: 1rem 0.8rem 1.3rem 1rem;
+        border: 2px dashed #99A8BF;
+        border-radius: 0.375rem 0.375rem 1rem 0.375rem;
+    }
+    .border_dashed {
+        width: 2rem;
+        height: 2rem;
+        max-width: 100%;
+        border: 0;
+        border-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0;
+    }
+    .flex_ramki{
+        gap: 8.9rem;
+        justify-content: flex-start;
+    }
+    .one_column{
+        width: 25%;
+    }
+    .icons_two_columns {
+        padding-top: 21px;
+        
+    }
+    .two_column{
+        column-gap: 2.6rem;
+        row-gap: 3rem;
+    }
+    .title_mexanizm{
+        max-width: 17.4rem;
+    }
+    .img_work-logo{
+        max-width: 4.5rem;
+        max-height: 2.5rem;
+    }
+    .mw19{
+        max-width: 19rem;
+    }
+    .container_work-logo{
+        padding-bottom: 0;
+    }
+    
+}
+@media (max-width: 1444px){
+    .container_form_footer{
+        width: 42%;
+    }
+    .question-text{
+        max-width: 25.1rem;
+    }
+    .answer p, .footer_text,.text_cards_small{
+        max-width: 27rem;
+    }
+    .question_column_two{
+        width: 69%;
+    }
+    .btn_footer{
+        width:65.4%;
+    }
+    .container_title_delivery{
+        padding-left: 2.4rem;
+        width: 76%;
+
+    }
+    .container_item_text_gray{
+        max-width: 26rem;
+    }
+    .container_under_video{
+        max-width: 37rem;
+        column-gap: 0.9rem;
+    }
+    .div-ul{
+        padding-left: 12px;
+    }
+    .under_video_text {
+        padding-left: 29px;
+    }
+    .f_size96{
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+
+    }
+    .f_size96{
+        max-width: 55rem;
+    }
+    .asd h1{
+        max-width: 49rem;
+    }
+    
+    .f_size48{
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: -2.5px;
+    }
+    .title_ramka, .text-2x1, .footer_text {
+    font-size: 2rem;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    }
+    .f_size32{
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    }
+
+    .f_size24{
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0em;
+    }
+    .text_container_identation{
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0em;
+    }
+    .one_text_text{
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0em;
+    }
+
+    .main_paragraph{
+        left: 3%;
+        bottom: 35%;
+    }
+    .main_paragraph p{
+        max-width: 24rem;
+    }
+    .text_car{
+        max-width: 25rem;
+    }
+    .under-container{
+        padding: 1.8rem 2.5rem;
+        max-width: 622px;
+        max-height: 450px;
+        aspect-ratio: 1/1;
+    }
+    .m95{
+        width: 94%;
+    }
+    .block_advantages {
+        padding: 2.5rem;
+    }
+    .feedback_messenger{
+        max-width: 11.5rem;
+    }
+    .title{
+        font-size: 6rem;
+        line-height: 96px;
+        max-width: 46rem;
+        margin-top: 45px;
+        letter-spacing: -2px;
+    }
+    .title_ramka_ramka{
+        max-width: 27rem;
+    }
+    .price_ramka{
+        letter-spacing: -0.2px;
+    }
+    .title_ramka{
+        max-width: 36rem;
+    }
+    .text_ramka{
+        max-width: 35rem;
+    }
+    .container-pt-27 {
+        padding-top: 5.3rem;
+    }
+    .text_colonki{
+        max-width: 19rem;
+    }
+    .text_opacity{
+        max-width: 24.25rem;
+    }
+    .guarantee_text_column_two{
+        max-width: 26.25rem;
+    }
+    .guarantee_text_column_two p{
+        max-width: 26.25rem;
+        width: 96%;
+    }
+    .container_guarantee_two .service_text{
+        width: 100%;
+    }
+    .guarantee_text_service p{
+        max-width: 41rem;
+    }
+    .text_car_moto{
+        max-width: 32rem;
+    }
+    .mobile_text{
+        font-size: 3rem;
+    }
+    .d_none{
+        display: none;
+    }
+    .none{
+        display: block;
+    }
+
+    .video-wrapper{
+        height: 41.125rem;
+    }
+    .question_column_one p{
+        max-width: 32rem;
+    }
+    .pt-32{
+        padding-top: 4rem;
+    }
+    /* grid */
+    .container_grid_identation{
+        grid-template-columns: 0.854fr;
+        column-gap: 0;
+        row-gap: 1.5rem;
+    }
+    .item_text_column{
+        max-width: 22rem;
+    }
+    .container_block_text:nth-child(3){
+        grid-column: 2;
+        grid-row: 2/3;
+    }
+    .container_block_text:nth-child(4){
+        grid-column: 2 / 4;
+        grid-row: 3 / 3;
+    }
+    .container_block_text:nth-child(5){
+        grid-column: 1 / 2;
+        grid-row: 4 / 4;
+    }
+    .container_block_text:nth-child(6){
+        grid-column: 2 / 4;
+        grid-row: 4 / 4;
+    }
+    .medium_text_a{
+        max-width: 18rem;
+    }
+    .advantages_wrapper p{
+        max-width: 24rem;
+    }
+    .text_width{
+        max-width: 30rem;
+    }
+    .sistema_text {
+        max-width: 17rem;
+    }
+    .text_width_two{
+        max-width: 23rem;
+    }
+    .text_width_one{
+        max-width: 23rem;
+    }
+    .advantages_left{
+        padding: 2.1rem 2.44rem;
+    }
+    .pl3{
+        padding-left: 2.5rem;
+    }
+    .ramka{
+        width: 92%;
+        aspect-ratio: 1/0.94;
+    }
+    .container_text_ramka{
+        padding-left: 0;
+    }
+    .previous{
+        width: 4rem;
+        height: 4rem;
+    }
+    .buttons_ramka{
+        column-gap: 0.5rem;
+    }
+    .span_text {
+        letter-spacing: -2px;
+    }
+    .container_guarantee_one{
+        margin-right: 0;
+        gap: 13.2rem;
+    }
+    .container_block_garantee{
+        column-gap: 1.56rem;
+    }
+    .main_paragraph p {
+        font-size: 1.5rem;
+
+    }
+    .f_size32{
+        font-size: 1.5rem;
+    }
+    .container_guarantee_two{
+        margin-right: 0;
+    }
+    .container_feedback_feedback{
+        column-gap: 11.3rem;
+        justify-content: flex-start;
+    }
+    ::placeholder{
+        font-size: 1.25rem;
+        line-height: 31px;
+        /* letter-spacing: -0.2px; */
+    }
+    .button_messenger{
+        width: 3rem;
+        height: 3rem;
+    }
+    .messenger_img{
+        max-width: 1.575rem;
+    }
+    .banner_text{
+        padding-right: 2.5rem;
+        padding-left: 0;
+    }
+    .header_ul{
+        padding: 0;
+        margin-left: 0;
+        column-gap: 2.5rem;
+    }
+    .header_nav{
+        max-width: 46.5625rem;
+    }
+    .mobile_identation{
+        max-width: 20rem;
+    }
+
+}
+@media (max-width: 1144px){
+    .tel, .btn_zakaz {
+        display: none;
+    }
+    .header_nav{
+        display: none;
+    }
+    .two_column {
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        gap: 1.5rem;
+    }
+    
+}
+@media (max-width: 840px){
+    .container-pt-28, .wrapper, .main_title {
+        max-width: 840px;
+    }
+    .container_grid_identation, .container_under_video{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 640px){
+    
+    .section_feedback, .tire,.container_grid_identation,.section_ramki_two,.section_ramka{
+        margin-top: 6rem;
+    }
+    .text_33, .medium_text_a,.medium_text {
+        margin-left: 1.25rem;
+    }
+    .item_text_column h1{
+        margin-left: 1.7rem;
+    }
+    .container-pt-28, .wrapper, .main_title {
+        max-width: 640px;
+    }
+    .container_grid_identation{
+        display: flex;
+        flex-direction: column;
+    }
+    .text_one_column_p {
+        max-width: 17rem;
+    }
+    
+    .car_bmw{
+        height: 14%;
+    }
+    .container_title_delivery{
+        padding-left: 2.5rem;
+    }
+    .m85{
+        width: 85%;
+    }
+     
+    .advantages_video{
+        padding-top: 100%;
+    }
+    .container_guarantee_two,.container, .container_block_garantee, .container_form_feedback{
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .guarantee_text_column_two{
+        padding-bottom: 10px;
+    }
+    .under_video_text {
+        padding-left: 19px;
+    }
+    .advantages_wrapper p{
+        padding-top: 10px;
+    }
+    .container-pt-27{
+        max-width: 20.938rem;
+        padding-top: 0;
+    }
+    .text_colonki{
+        max-width: 21rem;
+    }
+    .container_work-logo{
+        display: none;
+    }
+    .one_column,.container_footer,.container_form_footer,.btn_footer{
+        width: 100%;
+    }
+    .main_btn{
+        margin-bottom: 1.25rem;
+        gap: 0.625rem;
+    }
+    .btn_zakaz, .tel{
+        display: none;
+
+    }
+    .banner_text{
+        padding: 0;
+    }
+    .title{
+        font-size: 3rem;
+        line-height: 3rem;
+        max-width: 20rem;
+    }
+    .asd h1{
+        max-width: 20.27rem;
+        font-size: 32px;
+    }
+    .f_size96{
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.03em;
+        max-width: 18rem;
+    }
+    
+    .f_size48{
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    }
+    .footer_text{
+        font-size: 24px;
+    }
+    .mobile_text{
+        font-size: 36px;
+        line-height: 47px;
+        letter-spacing: -0.02em;
+        max-width: 18rem;
+    }
+    .pl3{
+        padding-left: 1.5rem;
+    }
+    .f_size32{
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.01em;
+    }
+    .f_size24{
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.2px;
+    }
+    .f_size20{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    }
+    .f_size18{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    }
+    .f_size16{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    }
+    .link-banner{
+        font-size: 1rem;
+    }
+    .main_paragraph p{
+        font-size: 1.125rem;
+        max-width: 18rem;
+    }
+    
+    .main_paragraph {
+        left: 5%;
+    }
+    .container_under_video{
+        flex-direction: column;
+    }
+    .container_title_delivery{
+        width: 100%;
+    }
+    .flex_ramki{
+        gap: 2.5rem;
+        flex-direction: column;
+    }
+    .section_advantages{
+        margin-top: 6rem;
+    }
+    .advantages{
+        flex-direction: column;
+    }
+    .advantages_left{
+        width: 100%;
+        padding: 1.25rem;
+    }
+    .m19{
+        max-width: 20rem;
+    }
+    .advantages_btn_consultation{
+        width: 100%;
+        padding: 0.9rem;
+    }
+    .advantages_wrapper p{
+        max-width: 19rem;
+    }
+    .advantages_right{
+        width: 100%;
+    }
+    .advantages_right{
+        display: flex;
+        flex-direction: column;
+    }
+    .advantages_video{
+        order: 2;
+    }
+    .advantages_under_video {
+        order: 1;
+    }
+    .guarantee_title_logo{
+        display: none;
+    }
+    .guarantee{
+        margin-top: 5rem;
+    }
+    .guarantee_text_column_two, .img_ramka,.container_text_ramka, .container_form_feedback,.text-2x1{
+        width: 100%;
+    }
+    .container_text_ramka {
+        padding-left: 0;
+    }
+    .previous{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .container_guarantee_one{
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 0;
+    }
+    .question_column_two{
+        width: 100%;
+    }
+    
+    .left_img{
+        flex-direction: column;
+    }
+    .title_ramka_ramka,.title_ramka{
+        font-size: 1.75rem;
+    }
+    .f_size16{
+        font-size: 0.875rem;
+    }
+    .container_feedback_feedback{
+        flex-direction: column;
+    }
+    .under-container{
+        padding: 1.25rem;
+        flex-basis: calc(100%);
+    }
+    .text_car, .text_car_moto{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .container_grid_identation{
+        display: flex;
+        flex-direction: column;
+    }
+    .container_question{
+        flex-direction: column;
+    }
+    .logo_img_question{
+        display: none;
+    }
+    
+}
+@media (max-width: 440px){
+    .container-pt-28, .wrapper, .main_title {
+        max-width: 334px;
+    }
+    .span_text {
+        letter-spacing: -1px;
+    }
+    .banner_text {
+        font-size: 0.75rem;
+        max-width: 15rem;
+        width: 100%;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+    .block_advantages{
+        padding: 2.5rem 1.2rem;
+    }
+    .text_opacity{
+        font-size: 1.125rem;
+        max-width: 18.25rem;
+    }
+    .div-ul {
+        padding-left: 7px;
+    }
+    .title_text_two {
+        max-width: 22rem;
+        font-size: 2rem;
+    }
+    .ramki-2015{
+        max-width: 18rem;
+        font-size: 2.25rem;
+    }
+    .m95{
+        width: 90%;
+    }
+    .under-container{
+        aspect-ratio: 1/1;
+    }
+    .text_car{
+        max-width: 16rem;
+        font-size: 1.125rem;
+    }
+    
+    
+    .text_car_moto {
+        max-width: 18rem;
+    }
+    .link_btn_car{
+        font-size: 1rem;
+    }
+    .text_container_identation{
+        max-width: 21rem;
+    }
+    .sistema_text{
+        max-width: 17rem;
+    }
+    .mw19{
+        max-width: 21rem;
+    }
+    .item_text_column h1{
+        margin-left: 2.6rem;
+        max-width: 15.65rem;
+    }
+    .text_33{
+        margin-left: 2.5rem;
+    }
+    .typing-demo{
+        font-size: 0.875rem;
+    }
+    .answer p{
+        max-width: 16rem;
+    }
+    .medium_text_a{
+        margin-left: 2.95rem;
+    }
+    .item_text_column p{
+        margin-left: 3.1rem;
+        font-size: 1rem;
+    }
+    .mobile_identation{
+        max-width: 15rem;
+    }
+    .guarantee_text_column_two p,.ramka{
+        width: 100%;
+    }
+    .one_text_text{
+        font-size: 1.25rem;
+        max-width: 18rem;
+    }
+    .none,.f_text_size{
+        font-size: 1.25rem;
+    }
+    .m85{
+        width: 89%;
+    }
+    .footer_bottom-text_two{
+        display: block;
+        margin-top: 2.5rem;
+    }
+    .footer_bottom-text{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 640px){
+    .container-pt-28, .wrapper, .main_title {
+        max-width: 640px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width:1280px){
+    .main_paragraph{
+        left: 8%;
+        top: 40%;
+       
+    }
+}
+@media (min-width: 768px){
+    .container, .wrapper, .main_title {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 900px){
+    .container, .wrapper, .main_title {
+        max-width: 900px;
+    }
+}
+@media (min-width: 1024px){
+    .container, .wrapper, .main_title {
+        max-width: 1250px;
+    }
+    .main_btn{
+        flex-direction: row;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+@media (min-width: 1280px){
+    .container, .wrapper, .main_title {
+        max-width: 1284px;
+    }
+    
+}
+
+@media (min-width:1536px) {
+    .car_bmw{
+        background-size: cover;
+        height: 250px;
+    }
+    .container, .wrapper, .main_title {
+        max-width: 1450px;
+    }
+    
+}
+
+@media (min-width: 1656px){
+    .container, .wrapper, .main_title {
+        max-width: 1600px;
+    }
+    
+}
+@media (min-width: 1760px){
+    .container, .wrapper, .main_title {
+        max-width: 1760px;
+    }
+    
+}
+    
+/* ------------ */

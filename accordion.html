@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Header on Scroll</title>
+    <style>
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .header.hidden {
+            transform: translateY(-100%);
+        }
+
+        /* Другие стили */
+        /* ... */
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <!-- Ваш заголовок здесь -->ыфвфывфывфывфыик <br>asfdasfaf <br>dsfdsfdsfds <br>dsfdsfdsfds
+</header><br>sdsfsdfsd <br>dsfsdfsf
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+
+    window.addEventListener('scroll', function() {
+        var currentScrollPos = window.pageYOffset;
+        var header = document.querySelector('.header');
+        if (prevScrollpos > currentScrollPos) {
+            header.classList.remove('hidden');
+        } else {
+            header.classList.add('hidden');
+        }
+        prevScrollpos = currentScrollPos;
+    });
+</script>
+
+</body>
+</html>
