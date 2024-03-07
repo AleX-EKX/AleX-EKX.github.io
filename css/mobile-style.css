@@ -687,6 +687,9 @@
     .medium_text_a{
         margin-left: 2.95rem;
     }
+    .text_33,.medium_text_a{
+        padding: 0;
+    }
     .item_text_column p{
         margin-left: 3.1rem;
         font-size: 1rem;
