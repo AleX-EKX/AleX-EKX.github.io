@@ -1,0 +1,153 @@
+#settingsIcon {
+    transition: transform 0.3s ease-in-out;
+}
+
+#settingsIcon:hover {
+    transform: rotate(360deg);
+}
+
+/* Ссылки */
+
+
+.link-ease-in-out a:after {
+    background-color: #f66d52; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
+
+/* Кнопки */
+.glow-on-hover {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent; 
+    margin: 30px auto 0 138px;
+    border: solid 2px #424242;
+    border-top: solid 2px #2A1A80;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  .check {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(-4px,50px,0);
+    opacity: 0;
+    span:nth-child(1) {
+      display: block;
+      width: 10px;
+      height: 2px;
+      background-color: #00f715;
+      transform: rotate(45deg);
+    }
+    span:nth-child(2) {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #00f715;
+      transform: rotate(-45deg) translate3d(14px, -4px, 0);
+      transform-origin: 100%;
+    }
+  }
+  
+  .loader.active {
+    animation: loading 2s ease-in-out; 
+    animation-fill-mode: forwards;
+  }
+  
+  .check.active {
+    opacity: 1;
+    transform: translate3d(-4px,4px,0);
+    transition: all .5s cubic-bezier(.49, 1.74, .38, 1.74);
+    transition-delay: .2s;
+  }
+  
+  @keyframes loading {
+    30% {
+      opacity:1; 
+    }
+    
+    85% {
+      opacity:1;
+      transform: rotate(1080deg);
+      border-color: #262626;
+    }
+    100% {
+      opacity:1;
+      transform: rotate(1080deg);
+       border-color: #4730c9;
+    }
+  }

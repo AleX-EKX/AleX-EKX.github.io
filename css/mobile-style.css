@@ -47,10 +47,20 @@
     }
     .two_column{
         column-gap: 2.6rem;
-        row-gap: 3rem;
+        row-gap: 3.1rem;
     }
     .title_mexanizm{
         max-width: 17.4rem;
+        margin-top: 3.125rem;
+    }
+    .text_one_column span{
+        line-height: 25px;
+    }
+    .text_two_column span{
+        line-height: 25px;
+    }
+    .text_one_column{
+        margin-bottom: 1.125rem;
     }
     .img_work-logo{
         max-width: 4.5rem;
@@ -65,11 +75,15 @@
     
 }
 @media (max-width: 1444px){
+    .main_btn{
+        margin-bottom: 2.3rem;
+    }
+    
     .container_form_footer{
         width: 42%;
     }
     .question-text{
-        max-width: 25.1rem;
+        max-width: 25.7rem;
     }
     .answer p, .footer_text,.text_cards_small{
         max-width: 27rem;
@@ -83,7 +97,7 @@
     .container_title_delivery{
         padding-left: 2.4rem;
         width: 76%;
-
+        row-gap: 4rem;
     }
     .container_item_text_gray{
         max-width: 26rem;
@@ -102,10 +116,16 @@
     font-size: 64px;
     line-height: 64px;
     letter-spacing: -0.03em;
-
+    }
+    .mr-mt2{
+        margin-right: 0.7rem;
+        margin-bottom: 1rem;
     }
     .f_size96{
         max-width: 55rem;
+    }
+    .ramki-2015{
+        max-width: 50rem;
     }
     .asd h1{
         max-width: 49rem;
@@ -116,6 +136,7 @@
     line-height: 47px;
     letter-spacing: -2.5px;
     }
+    
     .title_ramka, .text-2x1, .footer_text {
     font-size: 2rem;
     line-height: 42px;
@@ -124,18 +145,18 @@
     .f_size32{
     font-size: 24px;
     line-height: 31px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.2px;
     }
 
     .f_size24{
     font-size: 20px;
     line-height: 26px;
-    letter-spacing: 0em;
+    letter-spacing: -0.2px;
     }
     .text_container_identation{
     font-size: 18px;
     line-height: 23px;
-    letter-spacing: 0em;
+    letter-spacing: -0.1px;
     }
     .one_text_text{
     font-size: 24px;
@@ -172,7 +193,7 @@
         font-size: 6rem;
         line-height: 96px;
         max-width: 46rem;
-        margin-top: 45px;
+        margin-top: 4rem;
         letter-spacing: -2px;
     }
     .title_ramka_ramka{
@@ -192,6 +213,7 @@
     }
     .text_colonki{
         max-width: 19rem;
+        margin-top: 28px;
     }
     .text_opacity{
         max-width: 24.25rem;
@@ -202,18 +224,59 @@
     .guarantee_text_column_two p{
         max-width: 26.25rem;
         width: 96%;
+        padding-top: 28px;
     }
     .container_guarantee_two .service_text{
         width: 100%;
-    }
-    .guarantee_text_service p{
-        max-width: 41rem;
     }
     .text_car_moto{
         max-width: 32rem;
     }
     .mobile_text{
+        font-size: 2.25rem;
+    }
+    .price{
         font-size: 3rem;
+        letter-spacing: -0.4px;
+    }
+    .mt-2{
+        margin-top: 2.5rem;
+    }
+    .mb3_car{
+        padding-bottom: 1.7rem;
+    }
+    .under_video_title{
+        letter-spacing: -0.4px;
+    }
+    .section_ramki_two{
+        margin-top: 5rem;
+    }
+    strong{
+        line-height: 23px;
+    }
+    .section_advantages{
+        margin-top: 7.188rem;
+    }
+    .container_title_video {
+        padding-bottom: 2.813rem;
+        margin-top: 2rem;
+    }
+    .advantages_btn_consultation{
+        margin-top: 2.3rem;
+        margin-bottom: 0.6rem;
+        padding: 1.1rem 2.9rem;
+    }
+    .advantages_question {
+        margin-bottom: 3rem;
+    }
+    .under_video_text {
+        row-gap: 1.88rem;
+    }
+    .advantages_video{
+        padding-top: 46%;
+    }
+    .guarantee{
+        margin-top: 6.625rem;
     }
     .d_none{
         display: none;
@@ -233,20 +296,41 @@
     }
     /* grid */
     .container_grid_identation{
-        grid-template-columns: 0.854fr;
+        grid-template-columns: 0.849fr;
         column-gap: 0;
-        row-gap: 1.5rem;
+        row-gap: 4.2rem;
+        margin-top: 5.4rem;
+    }
+    .text_column_number b{
+        font-size: 1.125rem;
+    }
+    .text_column_number {
+        margin-top: 1.6rem;
+    }
+    .item_text_column h1{
+        margin-left: 2rem;
+    }
+    .f_text_size{
+        font-size: 1.467rem;
+        line-height: 27px;
+    }
+    .text_33{
+        padding-left: 2.1rem;
+    }
+    .item_text_column p{
+        margin-left: 2.9rem;
     }
     .item_text_column{
         max-width: 22rem;
     }
     .container_block_text:nth-child(3){
         grid-column: 2;
-        grid-row: 2/3;
+        grid-row: 3/3;
+        margin-bottom: 0;
     }
     .container_block_text:nth-child(4){
         grid-column: 2 / 4;
-        grid-row: 3 / 3;
+        grid-row: 2 / 3;
     }
     .container_block_text:nth-child(5){
         grid-column: 1 / 2;
@@ -257,7 +341,17 @@
         grid-row: 4 / 4;
     }
     .medium_text_a{
-        max-width: 18rem;
+        max-width: 26rem;
+    }
+    .section_question{
+        margin-top: 5.7rem;
+    }
+    .section_delivery {
+        margin-top: 7.5rem;
+    }
+    
+    .section_video {
+        margin-top: 7.5rem;
     }
     .advantages_wrapper p{
         max-width: 24rem;
@@ -285,7 +379,7 @@
         aspect-ratio: 1/0.94;
     }
     .container_text_ramka{
-        padding-left: 0;
+        padding: 0;
     }
     .previous{
         width: 4rem;
@@ -294,12 +388,16 @@
     .buttons_ramka{
         column-gap: 0.5rem;
     }
+    .section_feedback {
+        margin-top: 7.2rem;
+    }
     .span_text {
         letter-spacing: -2px;
     }
     .container_guarantee_one{
         margin-right: 0;
         gap: 13.2rem;
+        margin-top: 6.813rem;
     }
     .container_block_garantee{
         column-gap: 1.56rem;
@@ -313,10 +411,47 @@
     }
     .container_guarantee_two{
         margin-right: 0;
+        margin-top: 7.875rem;
+    }
+    .guarantee_text_service p{
+        padding-top: 1.1rem;
+        font-size: 2rem;
+        letter-spacing: -0.4px;
+        max-width: 41rem;
+    }
+
+    .container_text_ramka h1{
+        font-size: 2rem;
+        letter-spacing: -0.4px;
+    }
+    .section_ramka{
+        margin-top: 6.063rem;
     }
     .container_feedback_feedback{
         column-gap: 11.3rem;
         justify-content: flex-start;
+        margin-top: 2.9rem;
+    }
+    .input_feedback{
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+    }
+    .textarea_feedback{
+        padding-bottom: 2.25rem;
+        padding-top: 0;
+    }
+    .mb3{
+        margin-bottom: 1.3rem;
+    }
+    .block_advantages{
+        row-gap: 4.58rem;
+    }
+    .text_opacity {
+        padding-top: 0;
+        padding-bottom: 11px;
+    }
+    .section_advantages_two {
+        margin-top: 7.4rem;
     }
     ::placeholder{
         font-size: 1.25rem;
@@ -391,32 +526,40 @@
     .text_one_column_p {
         max-width: 17rem;
     }
-    
+
     .car_bmw{
         height: 14%;
     }
     .container_title_delivery{
         padding-left: 2.5rem;
+        row-gap: 3rem;
     }
     .m85{
         width: 85%;
     }
-     
+    .container_title_video {
+        margin-top: 1.5rem;
+    }
     .advantages_video{
-        padding-top: 100%;
+        padding-top: 155%;
+        order: 2;
     }
     .container_guarantee_two,.container, .container_block_garantee, .container_form_feedback{
         margin-top: 3rem;
         flex-direction: column;
     }
-    .guarantee_text_column_two{
-        padding-bottom: 10px;
-    }
     .under_video_text {
-        padding-left: 19px;
+        padding-left: 26px;
+    }
+    .ul_mob{
+        padding-bottom: 2rem;
     }
     .advantages_wrapper p{
-        padding-top: 10px;
+        padding-top: 3.25rem;
+        max-width: 19rem;
+    }
+    .advantages_btn_consultation{
+        margin-bottom: 0;
     }
     .container-pt-27{
         max-width: 20.938rem;
@@ -442,10 +585,25 @@
     .banner_text{
         padding: 0;
     }
+    .banner{
+        padding: 0.3rem 0;
+    }
+    .burger-menu{
+        transform: scale(-1, 1);
+    }
+    .container_feedback{
+        align-items: self-start;
+        column-gap: 0.35rem;
+    }
+    .main{
+        height: calc(129.5vh - 139px);
+    }
     .title{
         font-size: 3rem;
         line-height: 3rem;
         max-width: 20rem;
+        margin-top: 3rem;
+        letter-spacing: -1px;
     }
     .asd h1{
         max-width: 20.27rem;
@@ -453,11 +611,33 @@
     }
     .f_size96{
         font-size: 2.25rem;
-        line-height: 2.25rem;
+        line-height: 2.3rem;
         letter-spacing: -0.03em;
         max-width: 18rem;
     }
-    
+    .guarantee_text_column_two p{
+        padding-top: 2.2rem;
+        padding-bottom: 2rem;
+    }
+    .container_block_garantee{
+        margin-top: 2.2rem;
+    }
+    .guarantee_text_column_two h1{
+        margin-top: 0;
+    }
+    .guarantee_text_service p, .container_text_ramka h1{
+        font-size: 1.75rem;
+    }
+    .ramka{
+        aspect-ratio: 1/0.89;
+    }
+    .section_ramka{
+        margin-top: 4.7rem;
+    }
+    .container_guarantee_two {
+        gap: 2.5rem;
+        margin-top: 0;
+    }
     .f_size48{
     font-size: 28px;
     line-height: 36px;
@@ -473,7 +653,7 @@
         max-width: 18rem;
     }
     .pl3{
-        padding-left: 1.5rem;
+        padding-left: 1.3rem;
     }
     .f_size32{
     font-size: 20px;
@@ -507,12 +687,34 @@
         font-size: 1.125rem;
         max-width: 18rem;
     }
-    
+    .title_mexanizm {
+        margin-top: 3.4rem;
+    }
+    .text_colonki {
+        margin-top: 34px;
+    }
+    .icons_two_columns {
+        padding-top: 20px;
+    }
+    .two_column{
+        gap: 4.3rem;
+    }
     .main_paragraph {
         left: 5%;
+        bottom: 23.3%;
+    }
+    .main_btn_zakaz {
+        padding: 0.5rem 0;
+    }
+    .identation{
+        margin-top: 4.6rem;
+    }
+    .text_one_column{
+        margin-bottom: 1rem;
     }
     .container_under_video{
         flex-direction: column;
+        margin-bottom: 2.3rem;
     }
     .container_title_delivery{
         width: 100%;
@@ -522,14 +724,17 @@
         flex-direction: column;
     }
     .section_advantages{
-        margin-top: 6rem;
+        margin-top: 4.4rem;
+    }
+    .advantages_question{
+        margin-bottom: 1.8rem;
     }
     .advantages{
         flex-direction: column;
     }
     .advantages_left{
         width: 100%;
-        padding: 1.25rem;
+        padding: 1rem 1.25rem;
     }
     .m19{
         max-width: 20rem;
@@ -538,9 +743,6 @@
         width: 100%;
         padding: 0.9rem;
     }
-    .advantages_wrapper p{
-        max-width: 19rem;
-    }
     .advantages_right{
         width: 100%;
     }
@@ -548,17 +750,17 @@
         display: flex;
         flex-direction: column;
     }
-    .advantages_video{
-        order: 2;
-    }
     .advantages_under_video {
         order: 1;
     }
     .guarantee_title_logo{
         display: none;
     }
+    .two_text{
+        margin-top: 1.938rem;
+    }
     .guarantee{
-        margin-top: 5rem;
+        margin-top: 4.3rem;
     }
     .guarantee_text_column_two, .img_ramka,.container_text_ramka, .container_form_feedback,.text-2x1{
         width: 100%;
@@ -567,18 +769,72 @@
         padding-left: 0;
     }
     .previous{
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 2.75rem;
+        height: 2.75rem;
     }
     .container_guarantee_one{
-        margin-top: 5rem;
+        margin-top: 4.6rem;
         flex-direction: column;
         gap: 0;
     }
+    .text_otstup{
+        margin-top: 1.35rem;
+    }
+    .div-ul {
+        gap: 1.3rem;
+    }
+    .mb3{
+        padding-top: 6px;
+        margin-bottom: 1.7rem;
+    }
+    .container_form_feedback{
+        margin-top: 4rem;
+    }
+    .mobile_video{
+        padding-top: 175%;
+    }
     .question_column_two{
         width: 100%;
+        margin-top: 2.125rem;
     }
-    
+    .section_delivery{
+        margin-top: 5rem;
+    }
+    .gap-y-30{
+        row-gap: 0;
+    }
+    .mob_text_p{
+        max-width: 18rem;
+    }
+    .container_delivery_left{
+        row-gap: 1.4rem;
+    }
+    .py-20{
+        padding-top: 1rem;
+        padding-bottom: 10rem;
+    }
+    .section_advantages_two {
+        margin-top: 4.9rem;
+    }
+    .section_feedback{
+        margin-top: 5.1rem;
+    }
+    .section_video {
+        margin-top: 5.1rem;
+    }
+    .video-wrapper{
+        height: 43.125rem;
+    }
+    .section_question {
+        margin-top: 4.7rem;
+    }
+    .text-main-gray {
+        margin-bottom: 1.2rem;
+    }
+    .container_feedback_feedback {
+        margin-top: 1.9rem;
+        letter-spacing: -0.3px;
+    }
     .left_img{
         flex-direction: column;
     }
@@ -592,16 +848,31 @@
         flex-direction: column;
     }
     .under-container{
-        padding: 1.25rem;
+        padding: 0.9rem 1.25rem 1.25rem 1.25rem;
         flex-basis: calc(100%);
+        margin-bottom: 1.4rem;
+    }
+    .mt-2{
+        margin-top: 2.9rem;
+    }
+    .link_btn_car{
+        height: 51px;
     }
     .text_car, .text_car_moto{
         font-size: 1rem;
-        line-height: 1rem;
+        line-height: 1.3rem;
+    }
+    .section_ramki_two{
+        margin-top: 3.3rem;
+    }
+    .mb3_car{
+        padding-bottom: 1.3rem;
     }
     .container_grid_identation{
         display: flex;
         flex-direction: column;
+        margin-top: 3.3rem;
+        row-gap: 3.2rem;
     }
     .container_question{
         flex-direction: column;
@@ -627,11 +898,13 @@
         font-size: 1rem;
     }
     .block_advantages{
-        padding: 2.5rem 1.2rem;
+        padding: 1rem 1.25rem;
+        row-gap: 2rem;
     }
     .text_opacity{
         font-size: 1.125rem;
         max-width: 18.25rem;
+        margin-top: 1.875rem;
     }
     .div-ul {
         padding-left: 7px;
@@ -639,6 +912,9 @@
     .title_text_two {
         max-width: 22rem;
         font-size: 2rem;
+    }
+    .mob_text{
+        font-size: 2.25rem;
     }
     .ramki-2015{
         max-width: 18rem;
@@ -672,7 +948,7 @@
         max-width: 21rem;
     }
     .item_text_column h1{
-        margin-left: 2.6rem;
+        margin-left: 2.4rem;
         max-width: 15.65rem;
     }
     .text_33{
@@ -686,9 +962,10 @@
     }
     .medium_text_a{
         margin-left: 2.95rem;
+        
     }
-    .container_text_ramka{
-        margin-top: 2.5rem;
+    .container_text_ramka {
+        margin-top: 28px;
     }
     .text_33,.medium_text_a{
         padding: 0;
@@ -711,7 +988,7 @@
         font-size: 1.25rem;
     }
     .m85{
-        width: 89%;
+        width: 90%;
     }
     .footer_bottom-text_two{
         display: block;
@@ -773,6 +1050,9 @@
     }
     .container, .wrapper, .main_title {
         max-width: 1450px;
+    }
+    .five_text{
+        margin-left: 2rem !important; 
     }
     
 }
