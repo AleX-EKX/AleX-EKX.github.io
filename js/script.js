@@ -25,5 +25,20 @@ var prevScrollpos = window.pageYOffset;
         prevScrollpos = currentScrollPos;
     });
 
+    // buttons
+        // zagruzka
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.querySelector('.btn_footer'),
+                loader = document.querySelector('.loader'),
+                check = document.querySelector('.check');
+            
+            btn.addEventListener('click', function () {
+              loader.classList.add('active');    
+            });
+           
+            loader.addEventListener('animationend', function() {
+              check.classList.add('active'); 
+            });
+          });
 
     
