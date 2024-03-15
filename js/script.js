@@ -25,6 +25,61 @@ var prevScrollpos = window.pageYOffset;
         prevScrollpos = currentScrollPos;
     });
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = [
+            "/image/ramka.png", // Пути к вашим изображениям
+            "/image/image2.jpg",
+            "/image/image3.jpg",
+            "/image/image4.jpg"
+        ];
+        let currentIndex = 0;
+        const imageElement = document.getElementById('currentImage');
+        const nextButton = document.querySelector('.next');
+        const backButton = document.querySelector('.back');
+    
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImage();
+        });
+    
+        backButton.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImage();
+        });
+    
+        function updateImage() {
+            imageElement.src = images[currentIndex];
+        }
+    });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const videos = [
+            "https://www.youtube.com/embed/K5Eo0YYVi-U?si=p10x489Vp_lGFI2y", // Пути к вашим видео
+            "/image/image2.jpg",
+            "/image/image3.jpg",
+        ];
+        let currentIndex = 0;
+        const videoElement = document.getElementById('currentVideo');
+        const nextButton = document.querySelector('.next_video');
+        const backButton = document.querySelector('.back_video');
+
+        nextButton.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % videos.length;
+            updateVideo();
+        });
+
+        backButton.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + videos.length) % videos.length;
+            updateVideo();
+        });
+
+        function updateVideo() {
+            videoElement.src = videos[currentIndex];
+        }
+    });
+
+
     // buttons
         // zagruzka
         document.addEventListener('DOMContentLoaded', function () {
@@ -40,5 +95,7 @@ var prevScrollpos = window.pageYOffset;
               check.classList.add('active'); 
             });
           });
+
+
 
     
