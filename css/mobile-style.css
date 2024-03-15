@@ -1047,14 +1047,15 @@
     }
     
 }
-@media (max-height: 670px){
-    .main_paragraph {
-        bottom: 29%;
-    }
-}
+
 @media (max-height: 840px){
     .main_paragraph {
         bottom: 25%;
+    }
+}
+@media (max-height: 670px){
+    .main_paragraph {
+        bottom: 29%;
     }
 }
 @media (min-width: 640px){
