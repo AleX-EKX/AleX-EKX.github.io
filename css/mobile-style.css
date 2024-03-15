@@ -2,6 +2,9 @@
     .main_logo_img{
         width: 80%;
     }
+    .section_mexanizm_ramok{
+        display: none;
+    }
     .main{
         height: calc(100vh - 139px);
     }
@@ -506,9 +509,17 @@
     }
 }
 @media (max-width: 640px){
-    
+    .input_footer, .input_feedback{
+        font-size: 1rem;
+    }
+    .button_messenger_telega img{
+        width: 22px;
+    }
     .section_feedback, .tire,.container_grid_identation,.section_ramki_two,.section_ramka{
         margin-top: 6rem;
+    }
+    .tire{
+        height: 92px;
     }
     .text_33, .medium_text_a,.medium_text {
         margin-left: 1.25rem;
@@ -526,9 +537,22 @@
     .text_one_column_p {
         max-width: 17rem;
     }
-
+    .pt-32{
+        padding-top: 0;
+    }
+    .container{
+        margin-top: 2.5rem;
+    }
     .car_bmw{
-        height: 14%;
+        height: 16%;
+        max-width: 400px;
+        width: 100% !important;
+    }
+    .container_footer{
+        margin-bottom: 3rem;
+    }
+    .container-footer_flex{
+        margin-top: 2.5rem;
     }
     .container_title_delivery{
         padding-left: 2.5rem;
@@ -588,15 +612,20 @@
     .banner{
         padding: 0.3rem 0;
     }
-    .burger-menu{
-        transform: scale(-1, 1);
-    }
     .container_feedback{
-        align-items: self-start;
-        column-gap: 0.35rem;
+        align-items: center;
+        column-gap: 1.25rem;
+    }
+    .background_black{
+        border-color: transparent;
+        border: 2px solid white;
     }
     .main{
-        height: calc(129.5vh - 139px);
+        height: calc(100vh);
+    }
+    .one_paragraph {
+        max-width: 17rem;
+        margin-bottom: 1.875rem;
     }
     .title{
         font-size: 3rem;
@@ -604,6 +633,7 @@
         max-width: 20rem;
         margin-top: 3rem;
         letter-spacing: -1px;
+        font-weight: 600;
     }
     .asd h1{
         max-width: 20.27rem;
@@ -684,8 +714,8 @@
         font-size: 1rem;
     }
     .main_paragraph p{
-        font-size: 1.125rem;
-        max-width: 18rem;
+        font-size: 0.875rem;
+        max-width: 14rem;
     }
     .title_mexanizm {
         margin-top: 3.4rem;
@@ -700,11 +730,16 @@
         gap: 4.3rem;
     }
     .main_paragraph {
-        left: 5%;
-        bottom: 23.3%;
+        left: 6%;
+        bottom: 25%;
     }
+    .menus{
+        z-index: -1;
+        padding-top: 10px;
+    }
+    
     .main_btn_zakaz {
-        padding: 0.5rem 0;
+        /* padding: 0.5rem 0; */
     }
     .identation{
         margin-top: 4.6rem;
@@ -772,6 +807,9 @@
         width: 2.75rem;
         height: 2.75rem;
     }
+    .previous img{
+        width: 16px;
+    }
     .container_guarantee_one{
         margin-top: 4.6rem;
         flex-direction: column;
@@ -824,6 +862,7 @@
     }
     .video-wrapper{
         height: 43.125rem;
+        flex: 0 0 18.75rem;
     }
     .section_question {
         margin-top: 4.7rem;
@@ -857,6 +896,10 @@
     }
     .link_btn_car{
         height: 51px;
+        border-color: transparent;
+    }
+    .link_btn_car a{
+        font-size: 1rem;
     }
     .text_car, .text_car_moto{
         font-size: 1rem;
@@ -891,8 +934,9 @@
     }
     .banner_text {
         font-size: 0.75rem;
-        max-width: 15rem;
+        max-width: 14rem;
         width: 100%;
+        line-height: 14px;
     }
     ::placeholder{
         font-size: 1rem;
@@ -948,11 +992,11 @@
         max-width: 21rem;
     }
     .item_text_column h1{
-        margin-left: 2.4rem;
+        margin-left: 2.3rem;
         max-width: 15.65rem;
     }
     .text_33{
-        margin-left: 2.5rem;
+        margin-left: 2.2rem;
     }
     .typing-demo{
         font-size: 0.875rem;
@@ -964,8 +1008,12 @@
         margin-left: 2.95rem;
         
     }
+    .ramki_block {
+        row-gap: 2.5rem;
+    }
     .container_text_ramka {
         margin-top: 28px;
+        gap: 2rem;
     }
     .text_33,.medium_text_a{
         padding: 0;

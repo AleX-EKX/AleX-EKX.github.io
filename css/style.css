@@ -29,8 +29,9 @@ time, mark, audio, video {
     transition: font-weight 0.3s ease; /* Плавное изменение жирности */
     margin: 0;
     opacity: 0.9;
-    padding-top: 54px;
-    padding-bottom: 14px;
+    padding-top: 2.125rem;
+    padding-bottom: 2.125rem;
+    color: gray;
 }
 .answer {
     display: none; /* Начальное состояние: скрытый ответ */
@@ -48,11 +49,15 @@ time, mark, audio, video {
 }
 
 .accordion-container.active .question-text {
-    font-weight: bold; /* Изменение жирности текста */
+     /* Изменение жирности текста */
+    color: black;
 }
 
 .accordion-container.active .answer {
     display: block; /* Показываем ответ */
+}
+.header-li a{
+
 }
 .plus-icon {
     width: 32px;
@@ -62,11 +67,13 @@ time, mark, audio, video {
     transition: transform 0.3s ease; /* Плавное изменение состояния иконки */
     transform: rotate(45deg);
 }
+
 .cross-icon {
     display: none; /* Начальное состояние: скрытая крестик-иконка */
 }
 .accordion-container.active .plus-icon {
     transform: rotate(0deg); /* Поворот иконки */
+    fill: #000;
 }
 
 .accordion-container.active .cross-icon {
@@ -93,6 +100,7 @@ time, mark, audio, video {
     fill: black;
     transition: 0.3s ease-in-out;
 }
+
 .button {
     --tw-bg-opacity: 1;
     background-color: rgb(42 26 128/var(--tw-bg-opacity));
@@ -115,7 +123,10 @@ time, mark, audio, video {
 .burger_li{
     border-bottom: 1px solid #0000001A;
     padding: 1.25rem;
+    font-weight: 600;
+    font-size: 1.125rem;
 }
+
 .btn_burger{
     padding: 0rem 1.25rem 1.25rem 1.25rem;
 }
@@ -124,7 +135,6 @@ time, mark, audio, video {
 }
 
 .phone-number {
-    margin-top: 20px;
     padding: 1.25rem;
 }
 .header.hidden {
@@ -290,11 +300,13 @@ a{
     color: #000;
 }
 
-@font-face {
-    font-family: Hauora;
-    src: url('../fonts/Hauora-Medium.woff2') format('woff2'); 
-}
 
+@font-face { 
+    font-family: "Hauora"; 
+    src:local("Hauora"), 
+    /* Если не получилось, загрузит woff2 */ 
+    url("../fonts/HauoraGX.ttf"); 
+}
 * {
     font-family: Hauora;
     box-sizing: border-box;
@@ -326,31 +338,39 @@ a{
     font-size: 3rem;
     line-height: 62px;
     letter-spacing: -0.4px;
+    font-weight: 600;
 }
 .f_size32{
     font-size: 2rem;
     line-height: 42px;
     letter-spacing: -0.2px;
+    font-weight: 600;
 }
 .f_size24{
     font-size: 1.5rem;
     line-height: 31px;
     letter-spacing: -0.2px;
+    font-weight: 400;
 }
 .f_size20{
     font-size: 1.25rem;
     line-height: 24px;
     letter-spacing: -0.02em;
+    font-weight: 600;
 }
 .f_size18{
     font-size: 1.125rem;
     line-height: 22px;
     letter-spacing: 0em;
+    font-weight: 600;
 }
 .f_size16{
     font-size: 1rem;
     line-height: 19px;
     letter-spacing: -0.02em;
+}
+.mexaniz_ramok_title{
+    max-width: 40rem;
 }
 a{
     color: inherit;
@@ -377,7 +397,7 @@ a{
     transition: top 0.3s ease;
     top: 0;
     z-index: 30;
-    background-color: hsla(0,0%,100%,.75);
+    background-color: white;
     transition: transform 0.3s ease;
 }
 
@@ -444,7 +464,7 @@ a{
     inset: -200px 0px;
     will-change: transform;
     z-index: 5;
-    height: calc(100vh - 238px);
+    height: calc(100vh);
 }
 .section_main{
     position: relative;
@@ -514,8 +534,10 @@ a{
     border: 1px solid white;
     color: white;
     width: 100%;
-    padding: 0.8rem 0;
+    padding: 1rem 0;
+    line-height: 0;
 }
+
 .advantages_btn_consultation{
     margin-top: 3.5rem;
     margin-bottom: 0.4rem;
@@ -535,9 +557,16 @@ a{
     bottom: 8.7%;
 }
 .main_paragraph p{
-    font-size: 2rem;
-    max-width: 32rem;
+    font-size: 1.5rem;
+    max-width: 25rem;
     width: 100%;
+}
+.one_paragraph{
+    margin-bottom: 3.75rem;
+    max-width: 28rem;
+}
+.span{
+    font-weight: bold;
 }
 .identation{
     margin-top: 11.4375rem;
@@ -634,6 +663,7 @@ a{
     gap: 10rem;
     width: 100%;
 }
+
 .colonki{
     display: flex;
 }
@@ -700,6 +730,7 @@ a{
 .advantages_right{
     width: 50%;
     height: 50%;
+    border-bottom: 1px solid gray;
 }
 .advantages_container_video{
     width: 100%;
@@ -831,7 +862,7 @@ color: #2a1a80;
 
 }
 .section_ramka{
-    margin-top: 187px;
+    margin-top: 80px;
 }
 .left_img{
     display: flex;
@@ -860,13 +891,16 @@ color: #2a1a80;
     border-radius: 50%;
 }
 .container_text_ramka{
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: space-between;
+    /* gap: 2rem; */
     width: 60%;
     position: relative;
     padding-left: 5rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+.ramki_block{
+    row-gap: 3.75rem;
 }
 .container_text_ramka h1{
     display: grid;
@@ -930,10 +964,10 @@ color: #2a1a80;
     justify-content: center;
     align-items: center;
 }
-.button_messenger_telega{
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 10px;
+.button_messenger_telega img{
+    max-width: 30.4px;
+    max-height: 27.2px;
+    width: 100%;
 }
 .messenger_img{
     max-width: 100%;
@@ -951,6 +985,8 @@ color: #2a1a80;
     border-bottom: 1px solid gray;
     margin-bottom: 3.75rem;
     width: 100%;
+    font-size: 1.5rem;
+    line-height: 31px;
 }
 ::placeholder{
     font-size: 1.5rem;
@@ -970,6 +1006,8 @@ color: #2a1a80;
     border-bottom: 1px solid gray;
     color: white;
     margin-bottom: 1.688rem;
+    font-size: 1.5rem;
+    line-height: 31px;
 }
 .container_form_feedback{
     width: 36.6%;
@@ -987,6 +1025,8 @@ color: #2a1a80;
     padding-top: 0.5rem;
     background-color: transparent;
     width: 100%;
+    font-size: 1.5rem;
+    line-height: 31px;
 }
 .textarea_footer{
     margin-bottom: 30px;
@@ -1002,6 +1042,7 @@ color: #2a1a80;
     padding: 18px 32px 17px 32px;
     max-width: 21.25rem;
     width: 100%;
+    border-color: transparent;
 }
 
 .btn_footer{
@@ -1014,6 +1055,7 @@ color: #2a1a80;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1.4rem;
+    border-color: transparent;
 }
 /*  */
 .container_remote_car{
@@ -1033,10 +1075,6 @@ color: #2a1a80;
     max-width: 43rem;
 }
 .link_btn_car{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
     background-color: white;
     border-radius: 5px 5px 1.5rem 5px;
     text-decoration: none;
@@ -1044,13 +1082,14 @@ color: #2a1a80;
     max-width: 302px;
     width: 100%;
     height: 62px;
+    border: transparent;
+}
+.link_btn_car a{
     text-align: center;
-
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.02em;
-
 }
 .none{
     display: none;
@@ -1144,12 +1183,12 @@ strong{
 }
 .container_item_text{
     border: none;
-    border-top: 1px solid #000;
+    border-top: 2px solid #000;
     max-width: 27.5rem;
 }
 .container_item_text_gray{
     border: none;
-    border-top: 1px solid #99A8BF;
+    border-top: 2px solid #99A8BF;
     /* max-width: 38rem; */
 }
 
@@ -1190,9 +1229,10 @@ strong{
 .tire{
     margin-top: 9.5rem;
     /* max-width: 1920px; */
+    height: 200px;
     width: 100%;
-    background-size: contain;
-    
+    background-size: cover;
+    background-image: url(/image/tire.svg);
 }
 .section_video{
     margin-top: 12.5rem;
@@ -1305,7 +1345,7 @@ linear-gradient(0deg, #2A1A80, #2A1A80);
     
 }
 .question_column_one p{
-    max-width: 44.6rem;
+    max-width: 45rem;
 }
 .m85{
     margin: 0 auto;
@@ -1326,9 +1366,11 @@ linear-gradient(0deg, #2A1A80, #2A1A80);
 }
 
 .text-main-gray{
-    --tw-text-opacity: 1;
-    color: rgb(153 168 191/var(--tw-text-opacity));
+    color: gray;
     margin-bottom: 2.2rem;
+}
+.question_answer{
+    padding-bottom: 3.75rem;
 }
 .align-baseline{
     align-items: baseline;
@@ -1385,15 +1427,23 @@ linear-gradient(0deg, #2A1A80, #2A1A80);
     align-items: center;
 }
 .question_column_two{
-    row-gap: 1.25rem;
+    /* row-gap: 1.25rem; */
     width: 100%;
 }
 .container_q{
     width: 100%;
     margin: 0 auto;
 }
-.under-container{
-    padding: 5.2rem;
+.section_mexanizm_ramok{
+    margin-top: 10rem;
+}
+.container_mexaniz_ramok{
+    column-gap: 2.5rem;
+    width: 100%;
+}
+
+.under-container,.mexaniz_ramok,.mexaniz_ramok_two{
+    padding: 4rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1402,17 +1452,24 @@ linear-gradient(0deg, #2A1A80, #2A1A80);
     width: 100%;
     row-gap: 1.25rem;
     flex-basis: calc(50% - 1rem);
-    margin-bottom: 2rem;
     aspect-ratio: 3/2;
 }
 .under-container_two{
     background-image: url(/image/moped.jpg);
 }
+.mexaniz_ramok{
+    background-image: url(/image/otkid_ramki_one.png);
+    border-radius: 18px;
+}
+.mexaniz_ramok_two{
+    background-image: url(/image/otkid_ramki_two.png);
+    border-radius: 18px;
+}
 .question_column_two :active{
     
 }
 .bt-2{
-    border-bottom: 1px solid #999999;
+    border-bottom: 2px solid #999999;
 }
 .question_btn{
     font-family: inherit;
