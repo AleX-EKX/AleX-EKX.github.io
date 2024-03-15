@@ -621,7 +621,7 @@
         border: 2px solid white;
     }
     .main{
-        height: calc(100vh);
+        height: calc(100vh - 71px - 37px);
     }
     .one_paragraph {
         max-width: 17rem;
@@ -731,7 +731,7 @@
     }
     .main_paragraph {
         left: 6%;
-        bottom: 25%;
+        bottom: 28%;
     }
     .menus{
         z-index: -1;
@@ -1047,7 +1047,16 @@
     }
     
 }
-
+@media (max-height: 640px){
+    .main_paragraph {
+        bottom: 29%;
+    }
+}
+@media (max-height: 840px){
+    .main_paragraph {
+        bottom: 25%;
+    }
+}
 @media (min-width: 640px){
     .container-pt-28, .wrapper, .main_title {
         max-width: 640px;

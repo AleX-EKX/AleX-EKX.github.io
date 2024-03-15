@@ -464,7 +464,7 @@ a{
     inset: -200px 0px;
     will-change: transform;
     z-index: 5;
-    height: calc(100vh);
+    height: calc(100vh - 101px - 60px);
 }
 .section_main{
     position: relative;
@@ -499,11 +499,12 @@ a{
 .title{
     font-size: 9rem;
     line-height: 9rem;
-    max-width: 66rem;
+    max-width: 67rem;
     width: 100%;
     color: white;
     margin-top: 3.5625rem;
     letter-spacing: -2.8px;
+    font-weight: 600;
 }
 
 .main_bottom_container{
